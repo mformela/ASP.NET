@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using projectDemo.Validate;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace projectDemo.Models
@@ -50,7 +51,7 @@ namespace projectDemo.Models
     {
         [Required]
         [Display(Name = "Email")]
-        [EmailAddress]
+        [MyAttribute]
         public string Email { get; set; }
 
         [Required]
