@@ -197,6 +197,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AgeController.cs" />
+    <Compile Include="Controllers\BigLetterController.cs" />
     <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -208,6 +209,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Age18.cs" />
+    <Compile Include="Models\FirstBigLetter.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PoraDniaClass.cs" />
@@ -215,6 +217,7 @@
     <Compile Include="Models\ZipCode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="Validate\BigLetterAttribute.cs" />
     <Compile Include="Validate\MyAttribute.cs" />
     <Compile Include="Validate\PelnoletnoscAttribute.cs" />
     <Compile Include="Validate\ZipCodeAttribute.cs" />
@@ -285,6 +288,7 @@
     <Content Include="Views\PoraDnia\Index.cshtml" />
     <Content Include="Views\Age\Index.cshtml" />
     <Content Include="Views\Zip\Index.cshtml" />
+    <Content Include="Views\BigLetter\Index1.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
