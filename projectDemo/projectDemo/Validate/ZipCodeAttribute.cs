@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace projectDemo.Validate
@@ -10,10 +11,11 @@ namespace projectDemo.Validate
     {
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-            if ((int)value >= 18)
+            Regex a = new Regex(@"^[0-9]{2}\-[0-9]{3}$");
+            if (a.IsMatch(value.ToString()))
                 return ValidationResult.Success;
 
-            return new ValidationResult("Jesteś niepełnoletni");
+            return new ValidationResult("Błędny kod pocztowy. SPRÓBUJ JESZCZE RAZ");
         }
     }
 }

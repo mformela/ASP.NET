@@ -284,10 +284,10 @@
     <Content Include="Views\Piesek\Kotek.cshtml" />
     <Content Include="Views\PoraDnia\Index.cshtml" />
     <Content Include="Views\Age\Index.cshtml" />
+    <Content Include="Views\Zip\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Zip\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
