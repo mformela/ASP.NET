@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace BMI
+namespace Makiety
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -18,14 +18,11 @@ namespace BMI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-
         protected void Application_Error(object sender, EventArgs e)
         {
             Response.Clear();
             Server.ClearError();
-            Response.Redirect("~/Home"); // tutaj wposujemy url so widoku/ controllera albo coś 
+            Response.Redirect("~/Error/Index"); // tutaj wposujemy url so widoku/ controllera albo coś 
         }
     }
-
-    
 }
