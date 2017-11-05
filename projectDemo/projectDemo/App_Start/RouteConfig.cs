@@ -13,6 +13,8 @@ namespace projectDemo
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            //dodajemy poniższą linijkę, żeby stworzyć własny URL
+            routes.MapMvcAttributeRoutes();
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

@@ -17,6 +17,10 @@ namespace projectDemo.Validate
 
             return new ValidationResult("Zacznij z wielkiej litery");
 
+
+
+        
+
         }
     }
 }

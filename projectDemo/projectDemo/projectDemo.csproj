@@ -200,6 +200,7 @@
     <Compile Include="Controllers\BigLetterController.cs" />
     <Compile Include="Controllers\HelloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JakikolwiekController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PiesekController.cs" />
     <Compile Include="Controllers\PoraDniaController.cs" />
@@ -289,6 +290,9 @@
     <Content Include="Views\Age\Index.cshtml" />
     <Content Include="Views\Zip\Index.cshtml" />
     <Content Include="Views\BigLetter\Index1.cshtml" />
+    <Content Include="Views\Jakikolwiek\pies.cshtml" />
+    <Content Include="Views\Jakikolwiek\kot.cshtml" />
+    <Content Include="Views\Jakikolwiek\mysz.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
