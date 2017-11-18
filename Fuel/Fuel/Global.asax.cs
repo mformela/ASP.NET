@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Makiety
+namespace Fuel
 {
     public class MvcApplication : System.Web.HttpApplication
     {
@@ -16,13 +16,6 @@ namespace Makiety
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-        }
-
-        protected void Application_Error(object sender, EventArgs e)
-        {
-            Response.Clear();
-            Server.ClearError();
-            Response.Redirect("~/Error/Index"); // tutaj wposujemy url do widoku/ controllera albo coś 
         }
     }
 }
